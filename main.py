@@ -111,12 +111,12 @@ class YaUploader:
 
 
 if __name__ == '__main__':
-    vk_token = 'vk1.a.Y8DTUfRxr0eNfM86gnLVVEGsd53jPIIpzqMxYDAJqtHopHNmDVmXKUlGWQzhtzzjBg6z0bAbUXautbCDtjncJrjhJSb-LZbb2QFzi3evK1NtwRDGtz_rSzHqTScZrE7roNqSmRT52qdgt7hqhOdQoBPgcP9v576XuY_HDWGL1YJVWvLQcZUqJBZ04rec9SEUf9fnDosVoezZNbNSfguPNA'
+    vk_token = ''
     id = 'anya__ch'
     vk =VK(vk_token, id)
     vk_photos = vk.get_photo('profile') #'wall', 'saved', 'profile', or album_id
     bigiest_photo_vk = vk.big_size_photo(vk_photos)
-    ya_token = 'y0_AgAAAAAHiCakAADLWwAAAADRdxljJmanPssmQPaAqfkocxE9tldQ21w'
+    ya_token = ''
     yandex = YaUploader(ya_token)
     yandex.create_folder(vk.get_name())
-    yandex.forom_vk_to_yandex(bigiest_photo_vk,1)
+    yandex.forom_vk_to_yandex(bigiest_photo_vk)
